@@ -56,65 +56,181 @@ footer img:first-child,footer img:nth-child(2),footer img:nth-child(3){
   position: relative;
   width: 50px;
   height: 50px;
-  top: 700px;
+  top: 1200px;
+}
+.uno{
+  position: relative;
+  width: 362px;
+  height: 390px;
+  top:200px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+  float: left;
+  left: 50px;
+}
+.dos{
+  position: relative;
+  width: 362px;
+  height: 390px;
+  top:200px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+  float: left;
+  left: 120px;
+}
+.tres{
+  position: relative;
+  width: 362px;
+  height: 390px;
+  top:200px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+  left: 180px;
+}
+.cuatro{
+  position: relative;
+  width: 362px;
+  height: 390px;
+  top:210px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+ left: 50px;
+  float: left;
+}
+.cinco{
+  position: relative;
+  width: 362px;
+  height: 390px;
+  top:210px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+  left: 120px;
+}
+.seis{
+  position: relative;
+  width: 362px;
+  height: 390px;
+  top:-180px;
+  left: 904px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
 }
 
-section article img{
+.uno img, .dos img, .tres img, .cuatro img, .cinco img, .seis img{
+  width: 362px;
+  height: 390px;
+}
+.uno div, .dos div, .tres div, .cuatro div, .cinco div, .seis div{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(114, 198, 224, 0.835);
+  width: 362px;
+  height: 390px;
+  transform: scale(0);
+  transition-duration: .5s;
+  overflow: hidden;
+}
+.uno:hover div, .dos:hover div, .tres:hover div, .cuatro:hover div, .cinco:hover div, .seis:hover div{
+  transform: scale(1);
+  transition-duration: .5s;
+}
+.uno div h4, .dos div h4, .tres div h4, .cuatro div h4, .cinco div h4, .seis div h4{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  color: aliceblue;
+  margin-top: 40px;
+  font-size: 20px;
+  transform: translateY(-210px);
+  transition-duration: 0.6s;
+  transition-delay: .6s;
+  overflow: hidden;
+}
+.uno:hover div h4, .dos:hover div h4, .tres:hover div h4, .cuatro:hover div h4, .cinco:hover div h4, .seis:hover div h4{
+  transform: translateY(0);
+}
+.uno div p, .dos div p,.tres div p,.cuatro div p,.cinco div p,.seis div p{
+  text-align: justify;
+  padding: 15px 50px;
+  font-size: 15px;
+  margin-top: 40px;
+  font-family: 'Indie Flower', cursive;
+  color: aliceblue;
+  transform: translateY(200px);
+  transition-duration: .6s;
+  transition-delay: .8s;
+}
+.uno:hover div p, .dos:hover div p, .tres:hover div p, .cuatro:hover div p, .cinco:hover div p, .seis:hover div p{
+  transform: translateY(0);
+}
+.uno div a,.dos div a,.tres div a,.cuatro div a,.cinco div a,.seis div a{
+  text-decoration: none;
+  margin: auto 80px;
+  margin-top: 50px;
+  background-color: rebeccapurple;
+  font-size: 18px;
+  text-align: center;
+  transform: translateY(200px);
+  transition-duration: .6s;
+  transition-delay: .8s;
+}
+.uno:hover div a,.dos:hover div a,.tres:hover div a,.cuatro:hover div a,.cinco:hover div a,.seis:hover div a{
+  transform: translateY(0);
+}
+.animadas .uno img, .animadas .dos img, .animadas .tres img, .animadas .cuatro img{
+  width: 300px;
+  height: 390px;
+}
+.animadas .uno{
   position: relative;
-  width: 210px;
-  height: 280px;
+  width: 300px;
+  height: 390px;
+  top:80px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+  float: left;
+  left: 18px;
+}
+
+.animadas .dos{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+  float: left;
+  left:0px;
+}
+.animadas .tres{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+  float: left;
+  left: 37px;
+}
+.animadas .cuatro{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+  float: left;
+  left: 70px;
+}
+
+
+section.animadas.uno article img{
+  position: absolute;
+  width: 300px;
+  height: 390px;
   top: 170px;
   display:inline-block;
 }
-section.animadas article img{
-  position: relative;
-  width: 210px;
-  height: 280px;
-  top: 170px;
-  display:inline-block;
-}
-
-
-
-section.inicio img:nth-child(3){
-  position: relative;
-  width: 210px;
-  height: 280px;
-  top: 170px;
-  display:inline-block;
-}
-section.inicio img:nth-child(4){
-  position: relative;
-  width: 210px;
-  height: 280px;
-  top: 170px;
-  display:inline-block;
-}
-section.inicio img:nth-child(5){
-  position: relative;
-  width: 210px;
-  height: 280px;
-  top: 170px;
-  display:inline-block;
-}
-section.inicio img:nth-child(6){
-  position: relative;
-  width: 210px;
-  height: 280px;
-  top: 170px;
-  display:inline-block;
-}
-
-
-
-section.uno img:first-child{
-  position: relative;
-  width: 410px;
-  height: 380px;
-  top: -115px;
-  display:inline-block;
-}
-
 
 nav ul li{
   display: inline-block;
