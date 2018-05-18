@@ -118,13 +118,33 @@ h1{
   left: 24px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
+  float: left;
+}
+.siete{
+  position: relative;
+  width: 321px;
+  height: 390px;
+  top:15px;
+  left: 37px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+  float: left;
+}
+.ocho{
+  position: relative;
+  width: 321px;
+  height: 390px;
+  top:15px;
+  left: 52px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
 }
 
-.uno img, .dos img, .tres img, .cuatro img, .cinco img, .seis img{
+.uno img, .dos img, .tres img, .cuatro img, .cinco img, .seis img, .siete img, .ocho img{
   width: 321px;
   height: 390px;
 }
-.uno div, .dos div, .tres div, .cuatro div, .cinco div, .seis div{
+.uno div, .dos div, .tres div, .cuatro div, .cinco div, .seis div, .siete div, .ocho div{
   position: absolute;
   left: 0px;
   top: 0px;
@@ -135,11 +155,11 @@ h1{
   transition-duration: .5s;
   overflow: hidden;
 }
-.uno:hover div, .dos:hover div, .tres:hover div, .cuatro:hover div, .cinco:hover div, .seis:hover div{
+.uno:hover div, .dos:hover div, .tres:hover div, .cuatro:hover div, .cinco:hover div, .seis:hover div, .siete:hover div, .ocho:hover div{
   transform: scale(1);
   transition-duration: .5s;
 }
-.uno div h4, .dos div h4, .tres div h4, .cuatro div h4, .cinco div h4, .seis div h4{
+.uno div h4, .dos div h4, .tres div h4, .cuatro div h4, .cinco div h4, .seis div h4, .siete div h4, .ocho div h4{
   text-align: center;
   font-family: 'Indie Flower', cursive;
   color: aliceblue;
@@ -150,10 +170,10 @@ h1{
   transition-delay: .6s;
   overflow: hidden;
 }
-.uno:hover div h4, .dos:hover div h4, .tres:hover div h4, .cuatro:hover div h4, .cinco:hover div h4, .seis:hover div h4{
+.uno:hover div h4, .dos:hover div h4, .tres:hover div h4, .cuatro:hover div h4, .cinco:hover div h4, .seis:hover div h4, .siete:hover div h4, .ocho:hover div h4{
   transform: translateY(0);
 }
-.uno div p, .dos div p,.tres div p,.cuatro div p,.cinco div p,.seis div p{
+.uno div p, .dos div p,.tres div p,.cuatro div p,.cinco div p,.seis div p,.siete div p,.ocho div p{
   text-align: justify;
   margin: 0px;
   padding: 15px 50px;
@@ -165,10 +185,10 @@ h1{
   transition-duration: .6s;
   transition-delay: .8s;
 }
-.uno:hover div p, .dos:hover div p, .tres:hover div p, .cuatro:hover div p, .cinco:hover div p, .seis:hover div p{
+.uno:hover div p, .dos:hover div p, .tres:hover div p, .cuatro:hover div p, .cinco:hover div p, .seis:hover div p, .siete:hover div p, .ocho:hover div p{
   transform: translateY(0);
 }
-.uno div a,.dos div a,.tres div a,.cuatro div a,.cinco div a,.seis div a{
+.uno div a,.dos div a,.tres div a,.cuatro div a,.cinco div a,.seis div a,.siete div a,.ocho div a{
   text-decoration: none;
   margin: 80px;
   margin-top: 10px;
@@ -179,7 +199,7 @@ h1{
   transition-duration: .6s;
   transition-delay: .8s;
 }
-.uno:hover div a,.dos:hover div a,.tres:hover div a,.cuatro:hover div a,.cinco:hover div a,.seis:hover div a{
+.uno:hover div a,.dos:hover div a,.tres:hover div a,.cuatro:hover div a,.cinco:hover div a,.seis:hover div a,.siete:hover div a,.ocho:hover div a{
   transform: translateY(0);
 }
 .animadas .uno img, .animadas .dos img, .animadas .tres img, .animadas .cuatro img{
@@ -451,6 +471,78 @@ h1{
   overflow: hidden;
   float: left;
   left: 132px;
+}
+.avengers img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+}
+.devoluciones img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+}
+.drive img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+}
+.home img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+}
+.nuncadigas img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+}
+.siempre img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+}
+.jumanji img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+}
+.showman img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+}
+.hotel img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+}
+.increibles img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+}
+.zootopia img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
+}
+.heroes img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:80px;
 }
 nav ul li{
   display: inline-block;
