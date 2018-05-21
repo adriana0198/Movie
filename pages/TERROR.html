@@ -12,27 +12,29 @@
           <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="ANIMADAS.html">Animadas</a></li>
-            <li><a href="TERROR.html">Terror</a></li>
+            <li><a href="" class="borde">Terror</a></li>
             <li><a href="CIENCIAFICCION.html">Ciencia ficcion</a></li>
             <li><a href="ROMANCE.html">Romance</a></li>
             <li><a href="ACCION.html">Accion</a></li>
             <li><a href="COMEDIA.html">Comedia</a></li>
           </ul>
         </nav>
-      </header>  
-      <footer>
-          <img src="assets/twitter.png">
-          <img src="assets/youtube.png">
-          <img src="assets/instagram.png">
-      </footer> 
-    
+      </header> 
+      <section id="container">
+        <img class="slides" src="../assets/ouija2.png">
+        <img class="slides" src="../assets/noche.jpg">
+        <img class="slides" src="../assets/noestamossolos.jpg">
+        <img class="slides" src="../assets/ann-2.jpg">
+        <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
+        <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
+      </section> 
         <section class="terror">
             <article class="uno">
               <img src="../assets/ouija.jpg">
               <div>
                   <h4>Ouija 3: The Charlie Charlie Challenge</h4>
                   <p> Un dueño excéntrico de una casa encantada invita a un grupo de adolescentes desafortunados para jugar el juego aterrador conocido como Charlie Charlie. </p>
-                  <a>Ver</a>
+                  <a href="../pages/ouija.html">Ver</a>
               </div>
             </article>
             <article class="dos">
@@ -40,7 +42,7 @@
               <div>
                   <h4>No estamos solos </h4>
                   <p> Una presencia oscura aterroriza a una familia en su nuevo hogar a las afueras de Lima y buscan ayuda de un exorcista.</p>
-                  <a>Ver</a>
+                  <a href="../pages/noestamossolos.html">Ver</a>
               </div>
             </article>
             <article class="tres">
@@ -48,7 +50,7 @@
               <div>
                   <h4>Demonio</h4>
                   <p> Una prestigiosa parapsicóloga y su equipo se desplazan a Nuevo México para investigar los fenómenos que ocurren en la casa en la que ella creció. </p>
-                  <a>Ver</a>
+                  <a href="../pages/demonio.html">Ver</a>
               </div>
             </article>
             <article class="cuatro">
@@ -56,9 +58,51 @@
                 <div>
                     <h4>Annabelle: Creation</h4>
                     <p> Varios años después del trágico fallecimiento de su hija, un juguetero que crea muñecas y su mujer alojan en su casa a una enfermera y un grupo de chicas.</p>
-                    <a>Ver</a>
+                    <a href="../pages/anabelle.html">Ver</a>
                 </div>
             </article>
           </section>
+          <footer class="a">
+            <P>CINEMAX</P>
+            <img src="../assets/twitter.png" width="50px">
+            <img src="../assets/youtube.png" width="50px">
+            <img src="../assets/instagram.png" width="50px">
+          </footer>
     </body>
+    <script>
+      var index = 1;
+
+      function plusIndex(n){
+        index = index + n;
+        showImage(index);
+      }
+
+      showImage (1);
+      
+      function showImage (n){
+        var i;
+        var x = document.getElementsByClassName("slides");
+        if(n > x.length){index = 1};
+        if(n < 1){index = 1};
+        for(i=0;i<x.length;i++)
+        {
+          x[i].style.display = "none";
+        }
+      x[index-1].style.display = "block";
+      }
+
+      autoSlide();
+      function autoSlide(){
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for(i=0;i<x.length;i++)
+        {
+          x[i].style.display = "none";
+        }
+        if(index > x.length){index = 1};
+      x[index-1].style.display = "block";
+      index++;
+      setTimeout(autoSlide,4000);
+      }
+  </script>
   </html>

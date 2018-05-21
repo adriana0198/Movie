@@ -11,7 +11,7 @@
         <nav>
           <ul>
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="ANIMADAS.html">Animadas</a></li>
+            <li><a href="" class="borde">Animadas</a></li>
             <li><a href="TERROR.html">Terror</a></li>
             <li><a href="CIENCIAFICCION.html">Ciencia ficcion</a></li>
             <li><a href="ROMANCE.html">Romance</a></li>
@@ -20,12 +20,14 @@
           </ul>
         </nav>
       </header>  
-      <footer>
-          <img src="assets/twitter.png">
-          <img src="assets/youtube.png">
-          <img src="assets/instagram.png">
-      </footer> 
-    
+      <section id="container">
+        <img class="slides" src="../assets/hotel2.jpg">
+        <img class="slides" src="../assets/increibles2.jpeg">
+        <img class="slides" src="../assets/zootopia2.png">
+        <img class="slides" src="../assets/heroes.png">
+        <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
+        <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
+      </section>
         <section class="animadas">
             <article class="uno">
                 <img src="../assets/hoteltrans.jpg">
@@ -60,5 +62,47 @@
                 </div>
             </article>
           </section>
+          <footer class="a">
+            <P>CINEMAX</P>
+            <img src="../assets/twitter.png" width="50px">
+            <img src="../assets/youtube.png" width="50px">
+            <img src="../assets/instagram.png" width="50px">
+          </footer>
     </body>
+    <script>
+      var index = 1;
+
+      function plusIndex(n){
+        index = index + n;
+        showImage(index);
+      }
+
+      showImage (1);
+      
+      function showImage (n){
+        var i;
+        var x = document.getElementsByClassName("slides");
+        if(n > x.length){index = 1};
+        if(n < 1){index = 1};
+        for(i=0;i<x.length;i++)
+        {
+          x[i].style.display = "none";
+        }
+      x[index-1].style.display = "block";
+      }
+
+      autoSlide();
+      function autoSlide(){
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for(i=0;i<x.length;i++)
+        {
+          x[i].style.display = "none";
+        }
+        if(index > x.length){index = 1};
+      x[index-1].style.display = "block";
+      index++;
+      setTimeout(autoSlide,4000);
+      }
+  </script>
   </html>

@@ -13,26 +13,28 @@
               <li><a href="../index.html">Inicio</a></li>
               <li><a href="ANIMADAS.html">Animadas</a></li>
               <li><a href="TERROR.html">Terror</a></li>
-              <li><a href="CIENCIAFICCION.html">Ciencia ficcion</a></li>
+              <li><a href="" class="borde">Ciencia ficcion</a></li>
               <li><a href="ROMANCE.html">Romance</a></li>
               <li><a href="ACCION.html">Accion</a></li>
               <li><a href="COMEDIA.html">Comedia</a></li>
             </ul>
           </nav>
-        </header>  
-        <footer>
-            <img src="assets/twitter.png">
-            <img src="assets/youtube.png">
-            <img src="assets/instagram.png">
-        </footer> 
-      
+        </header> 
+        <section id="container">
+          <img class="slides" src="../assets/ligadelajusticia.jpeg">
+          <img class="slides" src="../assets/harry.jpg">
+          <img class="slides" src="../assets/starwars2.jpeg">
+          <img class="slides" src="../assets/avatar2.jpg">
+          <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
+          <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
+        </section> 
           <section class="cienciaficcion">
               <article class="uno">
                 <img src="../assets/justiceleague.jpg">
                 <div>
                     <h4>Liga de la justicia</h4>
                     <p> Gracias a su renovada fe en la humanidad e inspirado por el acto de altruísmo de Superman, Bruce Wayne pide ayuda a su nueva aliada, Diana Prince, para enfrentar a un enemigo aún más peligroso. </p>
-                    <a>Ver</a>
+                    <a href="../pages/justice.html">Ver</a>
                 </div>
               </article>
               <article class="dos">
@@ -40,7 +42,7 @@
                 <div>
                     <h4>Harry Potter y el misterio del príncipe</h4>
                     <p> Harry descubre un poderoso libro y, mientras trata de descubrir sus orígenes, colabora con Dumbledore en la búsqueda de una serie de objetos mágicos que ayudarán en la destrucción de Lord Voldemort.</p>
-                    <a>Ver</a>
+                    <a href="../pages/harrypotter.html">Ver</a>
                 </div>
               </article>
               <article class="tres">
@@ -48,7 +50,7 @@
                 <div>
                     <h4>Star Wars: El Despertar de la Fuerza</h4>
                     <p> Treinta años después de haber derrotado al Imperio, una nueva amenaza se cierne sobre la República. El terrible y enigmático guerrero Kylo Ren ha reunido un ejército de leales al Imperio.</p>
-                    <a>Ver</a>
+                    <a href="../pages/starwars.html">Ver</a>
                 </div>
               </article>
               <article class="cuatro">
@@ -56,9 +58,51 @@
                   <div>
                       <h4>Avatar</h4>
                       <p> En un exuberante planeta llamado Pandora viven los Na'vi, seres que aparentan ser primitivos pero que en realidad son muy evolucionados. Debido a que el ambiente de Pandora es venenoso, los híbridos humanos/Na'vi, llamados Avatares.</p>
-                      <a>Ver</a>
+                      <a href="../pages/avatar.html">Ver</a>
                   </div>
               </article>
             </section>
+            <footer class="a">
+              <P>CINEMAX</P>
+              <img src="../assets/twitter.png" width="50px">
+              <img src="../assets/youtube.png" width="50px">
+              <img src="../assets/instagram.png" width="50px">
+            </footer>
       </body>
+      <script>
+        var index = 1;
+
+        function plusIndex(n){
+          index = index + n;
+          showImage(index);
+        }
+
+        showImage (1);
+        
+        function showImage (n){
+          var i;
+          var x = document.getElementsByClassName("slides");
+          if(n > x.length){index = 1};
+          if(n < 1){index = 1};
+          for(i=0;i<x.length;i++)
+          {
+            x[i].style.display = "none";
+          }
+        x[index-1].style.display = "block";
+        }
+
+        autoSlide();
+        function autoSlide(){
+          var i;
+          var x = document.getElementsByClassName("slides");
+          for(i=0;i<x.length;i++)
+          {
+            x[i].style.display = "none";
+          }
+          if(index > x.length){index = 1};
+        x[index-1].style.display = "block";
+        index++;
+        setTimeout(autoSlide,4000);
+        }
+    </script>
     </html>

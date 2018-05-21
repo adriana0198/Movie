@@ -20,7 +20,7 @@ header img:first-child{
 }
 #container{
   width: 100%;
-  height: 500px;
+  height: 550px;
   border: 1px solid black;
   margin: 0px auto;
   position: relative;
@@ -28,7 +28,7 @@ header img:first-child{
 }
 #container img{
   width: 100%;
-  height: 500px;
+  height: 550px;
   left: 0px;
   position: absolute;
 }
@@ -51,12 +51,6 @@ header img:first-child{
 #container #btn2{
   position: relative;
   float: right;
-}
-footer img:first-child,footer img:nth-child(2),footer img:nth-child(3){
-  position: relative;
-  width: 50px;
-  height: 50px;
-  top: 1200px;
 }
 h1{
   text-align: center;
@@ -94,7 +88,7 @@ h1{
   position: absolute;
   width: 321px;
   height: 390px;
-  top:662px;
+  top:660px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   left: 1014px;
@@ -210,7 +204,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+  top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -221,7 +215,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+  top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -231,7 +225,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+  top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -241,7 +235,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+  top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -255,7 +249,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+  top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -266,7 +260,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -276,7 +270,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -286,7 +280,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -300,7 +294,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -311,7 +305,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -321,7 +315,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -331,7 +325,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -345,7 +339,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -356,7 +350,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -366,7 +360,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -376,7 +370,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -390,7 +384,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -401,7 +395,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -411,7 +405,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -421,7 +415,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -435,7 +429,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -446,7 +440,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -456,7 +450,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -466,7 +460,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -476,73 +470,121 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
 }
 .devoluciones img{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
 }
 .drive img{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
 }
 .home img{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
 }
 .nuncadigas img{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
 }
 .siempre img{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
 }
 .jumanji img{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
 }
 .showman img{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
 }
 .hotel img{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
 }
 .increibles img{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
 }
 .zootopia img{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
 }
 .heroes img{
   position: relative;
   width: 300px;
   height: 390px;
-  top:80px;
+   top:123px;
+}
+.ouija img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+   top:123px;
+}
+.noestamossolos img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+   top:123px;
+}
+.demonio img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+   top:123px;
+}
+.anabelle img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+   top:123px;
+}
+.justice img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+   top:123px;
+}
+.harrypotter img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+   top:123px;
+}
+.starwars img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+   top:123px;
+}
+.avatar img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+   top:123px;
 }
 nav ul li{
   display: inline-block;
@@ -553,18 +595,45 @@ nav ul{
 }
 a{
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 30px 20px 10px 30px;
   font-size: 18px;
   display: block;
   font-family: 'Rammetto One', cursive;
 }
-a:hover{
-  background-color: rgba(255, 0, 0, 0.5);
-}
+
 header{
   width: 100%;
   height: 110px;
-  background-color: rgba(255, 192, 203, 0.63);
+  background-color: rgb(30, 30, 116);
   text-align: center;
+}
+.borde{
+  border-bottom: solid 0.4px red;
+}
+
+footer p{
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  margin-top: 90px;
+  border-top: 1px solid black;
+}
+footer img{
+  position: relative;
+  left: 50px;
+}
+
+.a  p{
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  margin-top: 390px;
+  border-top: 1px solid black;
+}
+.a img{
+  position: relative;
+  left: 50px;
 }
