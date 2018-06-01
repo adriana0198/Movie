@@ -20,14 +20,26 @@
           </ul>
         </nav>
       </header> 
-      <section id="container">
-        <img class="slides" src="../assets/ouija2.png">
-        <img class="slides" src="../assets/noche.jpg">
-        <img class="slides" src="../assets/noestamossolos.jpg">
-        <img class="slides" src="../assets/ann-2.jpg">
-        <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
-        <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
-      </section> 
+      <div class="slider">  
+          <ul>
+            <li class="informacion">
+              <img src="../assets/ouija2.png">
+              <h1 class="ouija"></h1>
+            </li>
+            <li class="informacion"> 
+             <img src="../assets/noche.jpg">
+             <h1 class="noche"></h1>
+            </li>
+            <li class="informacion">
+              <img src="../assets/noestamossolos.jpg">
+              <h1 class="noestamossolos"></h1>
+            </li>
+            <li class="informacion">
+             <img src="../assets/ann-2.jpg">
+             <h1 class="Annabelle"> </h1>
+            </li>
+        </ul> 
+      </div>
         <section class="terror">
             <article class="uno">
               <img src="../assets/ouija.jpg">
@@ -62,47 +74,16 @@
                 </div>
             </article>
           </section>
-          <footer class="a">
+          <footer class="genero">
             <P>CINEMAX</P>
-            <img src="../assets/twitter.png" width="50px">
-            <img src="../assets/youtube.png" width="50px">
-            <img src="../assets/instagram.png" width="50px">
+            <img src="../assets/twitter.png" width="45px">
+            <img src="../assets/youtube.png" width="45px">
+            <img src="../assets/instagram.png" width="45px">
+            <img src="../assets/facebook.png" width="45px">
+            <h3>¿Qué es CINEMAX?</h3>
+            <h3>Politica de Privacidad</h3>
+            <h3>Términos de uso</h3>
+            <h3>Ayuda</h3>
           </footer>
     </body>
-    <script>
-      var index = 1;
-
-      function plusIndex(n){
-        index = index + n;
-        showImage(index);
-      }
-
-      showImage (1);
-      
-      function showImage (n){
-        var i;
-        var x = document.getElementsByClassName("slides");
-        if(n > x.length){index = 1};
-        if(n < 1){index = 1};
-        for(i=0;i<x.length;i++)
-        {
-          x[i].style.display = "none";
-        }
-      x[index-1].style.display = "block";
-      }
-
-      autoSlide();
-      function autoSlide(){
-        var i;
-        var x = document.getElementsByClassName("slides");
-        for(i=0;i<x.length;i++)
-        {
-          x[i].style.display = "none";
-        }
-        if(index > x.length){index = 1};
-      x[index-1].style.display = "block";
-      index++;
-      setTimeout(autoSlide,4000);
-      }
-  </script>
   </html>

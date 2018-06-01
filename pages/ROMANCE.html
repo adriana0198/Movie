@@ -20,21 +20,33 @@
             </ul>
           </nav>
         </header> 
-        <section id="container">
-          <img class="slides" src="../assets/thenotebook2.jpeg">
-          <img class="slides" src="../assets/bajolamismaestrella.jpg">
-          <img class="slides" src="../assets/cuandoteencontre2.jpg">
-          <img class="slides" src="../assets/amor2.jpg">
-          <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
-          <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
-        </section> 
+        <div class="slider">  
+            <ul>
+              <li class="informacion">
+                <img src="../assets/thenotebook2.jpeg">
+                <h1 class="ellibro"></h1>
+              </li>
+              <li class="informacion"> 
+               <img src="../assets/bajolamismaestrella.jpg">
+               <h1 class="bajolamismaestrella"></h1>
+              </li>
+              <li class="informacion">
+                <img src="../assets/cuandoteencontre2.jpg">
+                <h1 class="cuandoteencontre"></h1>
+              </li>
+              <li class="informacion">
+               <img src="../assets/amor2.jpg">
+               <h1 class="amor"></h1>
+              </li>
+          </ul> 
+        </div>
           <section class="romance">
               <article class="uno">
                 <img src="../assets/eldiario.jpg">
                 <div>
                     <h4>El diario de Noah</h4>
                     <p> Un hombre le cuenta a una mujer la historia de dos jóvenes que se volvieron amantes en la Carolina del Norte de 1940.</p>
-                    <a>Ver</a>
+                    <a href="../pages/eldiario.html">Ver</a>
                 </div>
               </article>
               <article class="dos">
@@ -42,7 +54,7 @@
                 <div>
                     <h4>Bajo la misma estrella</h4>
                     <p> Dos adolescentes pacientes de cáncer inician un viaje para reafirmar sus vidas y visitar a un escritor solitario en Ámsterdam.</p>
-                    <a>Ver</a>
+                    <a href="../pages/bajolamismaestrella.html">Ver</a>
                 </div>
               </article>
               <article class="tres">
@@ -50,7 +62,7 @@
                 <div>
                     <h4>Cuando te encuentre</h4>
                     <p> Logan Thibault, sargento de la Marina de Estados Unidos, regresa a casa de su tercer viaje a Iraq con una cosa que cree lo mantuvo con vida: una fotografía de una mujer a la que no conoce.</p>
-                    <a>Ver</a>
+                    <a href="../pages/teencontre.html">Ver</a>
                 </div>
               </article>
               <article class="cuatro">
@@ -58,51 +70,20 @@
                   <div>
                       <h4>Midnight Sun</h4>
                       <p> Una adolescente que moriría si se expusiera a la luz vive un romance de verano con el chico del que lleva años enamorada. A medida que su relación se afianza, ella busca maneras de ocultarle la enfermedad.</p>
-                      <a>Ver</a>
+                      <a href="../pages/amordemedianoche.html">Ver</a>
                   </div>
               </article>
             </section>
-            <footer class="a">
+            <footer class="genero">
               <P>CINEMAX</P>
-              <img src="../assets/twitter.png" width="50px">
-              <img src="../assets/youtube.png" width="50px">
-              <img src="../assets/instagram.png" width="50px">
+              <img src="../assets/twitter.png" width="45px">
+            <img src="../assets/youtube.png" width="45px">
+            <img src="../assets/instagram.png" width="45px">
+            <img src="../assets/facebook.png" width="45px">
+            <h3>¿Qué es CINEMAX?</h3>
+            <h3>Politica de Privacidad</h3>
+            <h3>Términos de uso</h3>
+            <h3>Ayuda</h3>
             </footer>
       </body>
-      <script>
-        var index = 1;
-
-        function plusIndex(n){
-          index = index + n;
-          showImage(index);
-        }
-
-        showImage (1);
-        
-        function showImage (n){
-          var i;
-          var x = document.getElementsByClassName("slides");
-          if(n > x.length){index = 1};
-          if(n < 1){index = 1};
-          for(i=0;i<x.length;i++)
-          {
-            x[i].style.display = "none";
-          }
-        x[index-1].style.display = "block";
-        }
-
-        autoSlide();
-        function autoSlide(){
-          var i;
-          var x = document.getElementsByClassName("slides");
-          for(i=0;i<x.length;i++)
-          {
-            x[i].style.display = "none";
-          }
-          if(index > x.length){index = 1};
-        x[index-1].style.display = "block";
-        index++;
-        setTimeout(autoSlide,4000);
-        }
-    </script>
     </html>

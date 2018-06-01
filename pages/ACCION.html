@@ -20,37 +20,48 @@
             </ul>
           </nav>
         </header>
-        <section id="container">
-          <img class="slides" src="../assets/tomb2.jpg">
-          <img class="slides" src="../assets/momia2.jpg">
-          <img class="slides" src="../assets/wolverine2.jpg">
-          <img class="slides" src="../assets/cienciaficcion.jpg">
-          <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
-          <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
-        </section>  
+        <div class="slider">  
+            <ul>
+              <li class="informacion">
+                <img src="../assets/tomb2.jpg">
+              </li>
+              <li class="informacion"> 
+               <img src="../assets/jasonbourne.jpg">
+               <h1 class="jasonbourne"></h1>
+              </li>
+              <li class="informacion">
+                <img src="../assets/momia2.jpg">
+                <h1 class="momia"></h1>
+              </li>
+              <li class="informacion">
+               <img src="../assets/wolverine2.jpg">
+               <h1 class="wolverine"> </h1>
+              </li>
+          </ul> 
+        </div> 
           <section class="accion">
               <article class="uno">
                 <img src="../assets/tomb.jpg">
                 <div>
                     <h4>Tomb Raider</h4>
                     <p>Tomb Raider es una franquicia de medios, que incluye una serie de videojuegos, historietas y películas que giran alrededor de las aventuras de la arqueóloga británica Lara Croft.</p>
-                    <a>Ver</a>
+                    <a href="../pages/tombraider.html">Ver</a>
                 </div>
               </article>
               <article class="dos">
-                <img src="../assets/town.jpg">
+                <img src="../assets/jasonbourne2.jpg">
                 <div>
-                    <h4>The Town</h4>
-                    <p> Doug MacRay encabeza a un grupo de rudos ladrones de bancos y, por ello, no tiene relaciones serias. Todo eso cambia cuando conoce a la gerente Claire Keesey y la secuestra en su banco.</p>
-                    <a>Ver</a>
+                    <h4>Jason Bourne</h4>
+                    <p> Han pasado 10 años desde que Jason Bourne desapareciera, pero ahora deberá luchar contra una organización que utiliza la tecnología para sembrar el terror. </p>
+                    <a href="../pages/jasonbourne.html">Ver</a>
                 </div>
               </article>
               <article class="tres">
                 <img src="../assets/momia.jpg">
                 <div>
                     <h4>La momia</h4>
-                    <p> Ahmanet, una antigua princesa egipcia maldita, despierta en su cripta y, furiosa y malvada, siembra el terror entre los humanos. La única persona que puede detenerla y evitar que arrase Londres es un intrépido mercenario.</p>
-                    <a>Ver</a>
+                    <p> Ahmanet, una antigua princesa egipcia maldita, despierta en su cripta y, furiosa y malvada, siembra el terror entre los humanos. La única persona que puede detenerla.</p>
+                    <a href="../pages/momia.html">Ver</a>
                 </div>
               </article>
               <article class="cuatro">
@@ -58,51 +69,20 @@
                   <div>
                       <h4>Lobezno Inmortal</h4>
                       <p> En Japón y vulnerable por primera vez, Wolverine se enfrenta a un samurái letal de acero y su interior lucha contra su propia inmortalidad.</p>
-                      <a>Ver</a>
+                      <a href="../pages/wolverine.html">Ver</a>
                   </div>
               </article>
             </section>
-            <footer class="a">
+            <footer class="genero">
               <P>CINEMAX</P>
-              <img src="../assets/twitter.png" width="50px">
-              <img src="../assets/youtube.png" width="50px">
-              <img src="../assets/instagram.png" width="50px">
+              <img src="../assets/twitter.png" width="45px">
+              <img src="../assets/youtube.png" width="45px">
+              <img src="../assets/instagram.png" width="45px">
+              <img src="../assets/facebook.png" width="45px">
+              <h3>¿Qué es CINEMAX?</h3>
+              <h3>Politica de Privacidad</h3>
+              <h3>Términos de uso</h3>
+              <h3>Ayuda</h3>
             </footer>
       </body>
-      <script>
-        var index = 1;
-
-        function plusIndex(n){
-          index = index + n;
-          showImage(index);
-        }
-
-        showImage (1);
-        
-        function showImage (n){
-          var i;
-          var x = document.getElementsByClassName("slides");
-          if(n > x.length){index = 1};
-          if(n < 1){index = 1};
-          for(i=0;i<x.length;i++)
-          {
-            x[i].style.display = "none";
-          }
-        x[index-1].style.display = "block";
-        }
-
-        autoSlide();
-        function autoSlide(){
-          var i;
-          var x = document.getElementsByClassName("slides");
-          for(i=0;i<x.length;i++)
-          {
-            x[i].style.display = "none";
-          }
-          if(index > x.length){index = 1};
-        x[index-1].style.display = "block";
-        index++;
-        setTimeout(autoSlide,4000);
-        }
-    </script>
     </html>

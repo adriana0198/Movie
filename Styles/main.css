@@ -18,41 +18,50 @@ header img:first-child{
   width: 230px;
   height: 90px;
 }
-#container{
+.slider{
+  width: 1350px;
+  height: 650px;
+  margin: auto;
+  overflow: hidden; 
+
+}
+.slider ul{
+  display: flex;
+  padding: 0%;
+  width: 400%;
+  animation: cambio 20s infinite alternate;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+.slider ul li{
   width: 100%;
-  height: 550px;
-  border: 1px solid black;
-  margin: 0px auto;
-  position: relative;
-  top: 100px;
+  list-style: none;
 }
-#container img{
-  width: 100%;
-  height: 550px;
-  left: 0px;
-  position: absolute;
+.slider img{
+  width: 1350px;
+  height: 650px;
+  object-fit: initial;
 }
-#container .btn{
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  display: block;
-  border: none;
-  border-radius: 50%;
-  top: 250px;
-  left: 0px;
-}
-#container #btn1:hover{
-  box-shadow: 7px 0px 20px 0px bisque;
-}
-#container #btn2:hover{
-  box-shadow: -7px 0px 20px 0px bisque;
-}
-#container #btn2{
-  position: relative;
-  float: right;
+@keyframes cambio{
+  0% {margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
 }
 h1{
+  color: white;
+  z-index: 30;
+  top: 270px;
+  position: absolute;
+}
+
+h2{
   text-align: center;
   height: 50px;
   font-size: 20px;
@@ -88,7 +97,7 @@ h1{
   position: absolute;
   width: 321px;
   height: 390px;
-  top:660px;
+  top:760px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   left: 1014px;
@@ -450,7 +459,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -460,7 +469,7 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:123px;
   background-color: rgba(128, 121, 103, 0);
   overflow: hidden;
   float: left;
@@ -470,121 +479,211 @@ h1{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
+.avengers h1{
+  margin: -322px 425px 0px 387px;
+}
+
 .devoluciones img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .drive img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .home img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
+  left: 20px;
 }
+.home h1{
+ color: black;
+ top: 861px;
+ left: 650px;
+}
+.home p{
+  position: absolute;
+  top: 950px;
+  left: 650px;
+  color: black;
+  text-align: justify;
+}
+
 .nuncadigas img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .siempre img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .jumanji img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .showman img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .hotel img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .increibles img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .zootopia img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .heroes img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .ouija img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .noestamossolos img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .demonio img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .anabelle img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .justice img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .harrypotter img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .starwars img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
 }
 .avatar img{
   position: relative;
   width: 300px;
   height: 390px;
-   top:123px;
+  top:861px;
+}
+.diario img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:861px;
+}
+.estrella img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:861px;
+}
+.teencontre img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:861px;
+}
+.amor img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:861px;
+}
+.tomb img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:861px;
+}
+.jason img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:861px;
+}
+.momia img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:861px;
+}
+.wolverine img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:861px;
+}
+.teniaqueserel img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:861px;
+}
+.spy img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:861px;
+}
+.deadpool img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:861px;
+}
+.superpoli img{
+  position: relative;
+  width: 300px;
+  height: 390px;
+  top:861px;
 }
 nav ul li{
   display: inline-block;
@@ -617,23 +716,367 @@ footer p{
   width: 100%;
   height: 70px;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 68px;
+  opacity: .6;
+  overflow: hidden;
   border-top: 1px solid black;
 }
 footer img{
   position: relative;
-  left: 50px;
+  left: 580px;
+  top: -50px;
+  opacity: .6;
+  overflow: hidden;
+}
+footer h3{
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  width: auto;
+  opacity: .6;
+  margin: 0px -211px 27px 227px;
+  overflow: hidden;
+}
+.genero p{
+  margin-top: 155px;
+}
+.peliculas p{
+  margin-top: 600px;
 }
 
-.a  p{
-  display: inline-block;
+.video-hotel{
+  display: block;
   width: 100%;
-  height: 70px;
-  text-align: center;
-  margin-top: 390px;
-  border-top: 1px solid black;
-}
-.a img{
+  height: 600px;
+  top: -284px;
   position: relative;
-  left: 50px;
+}
+.video-hotel video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-zootopia{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-zootopia  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-heroes{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-heroes  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-avengers{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-avengers  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-devoluciones{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-devoluciones  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-drive{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-drive  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-home{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-home  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-nuncadigas{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-nuncadigas  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-jumanji{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-jumanji  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-show{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-show  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-anabelle{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-anabelle  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-noestamos{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-noestamos  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-lanoche{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-lanoche  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-liga{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-liga  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-harry{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-harry  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-starwars{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-starwars  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-estrella{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-estrella  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-teencontre{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-teencontre  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-amor{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-amor  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-porqueel{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-porqueel  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-deadpool{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-deadpool  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-espias{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-espias  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-superpoli{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-superpoli  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
+}
+.video-wolverine{
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: -284px;
+  position: relative;
+}
+.video-wolverine  video{
+  width: 100%;
+  height: 600px;
+  background: white;
+  background-size: cover;
+  text-align: center;
 }
