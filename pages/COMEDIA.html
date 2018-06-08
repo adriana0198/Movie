@@ -7,7 +7,7 @@
     </head>
       <body>
         <header>
-          <img src="../assets/cinemax.png">
+          <img src="../assets/icons/cinemax.png">
           <nav>
             <ul>
               <li><a href="../index.html">Inicio</a></li>
@@ -23,79 +23,76 @@
         <div class="slider">  
             <ul>
               <li class="informacion">
-                <img src="../assets/why-him.jpg">
+                <img src="../assets/galery/why-him.jpg">
                 <h1 class="porqueel"></h1>
               </li>
               <li class="informacion"> 
-               <img src="../assets/espias.jpg">
+               <img src="../assets/galery/espias.jpg">
                <h1 class="spy"></h1>
               </li>
               <li class="informacion">
-                <img src="../assets/Deadpool2.jpg">
+                <img src="../assets/galery/Deadpool2.jpg">
                 <h1 class="deadpool"></h1>
               </li>
               <li class="informacion">
-               <img src="../assets/superpoli2.jpg">
+               <img src="../assets/galery/superpoli2.jpg">
                <h1 class="superpoli"></h1>
               </li>
           </ul> 
         </div>   
           <section class="comedia">
               <article class="uno">
-                <img src="../assets/teniaqueserel.jpg">
+                <img src="../assets/galery/teniaqueserel.jpg">
                 <div>
                     <h4>¿Tenía que ser él?</h4>
                     <p> Un padre desaprueba la nueva relación de su hija, una estudiante brillante que ahora sale con un excéntrico millonario de Silicon Valley.</p>
-                    <a href="../pages/teniaqueserel.html">Ver</a>
+                    <a href="../pages/galery/teniaqueserel.html">Ver</a>
                 </div>
               </article>
               <article class="dos">
-                <img src="../assets/spy-despistada.jpg">
+                <img src="../assets/galery/spy-despistada.jpg">
                 <div>
                     <h4>SPY:una espía despistada</h4>
                     <p> Una analista de la CIA poco cualificada para la acción asume la peligrosa misión de introducirse en una banda de criminales búlgaros para vengar la muerte de su compañero.</p>
-                    <a href="../pages/spy.html">Ver</a>
+                    <a href="../pages/galery/spy.html">Ver</a>
                 </div>
               </article>
               <article class="tres">
-                <img src="../assets/deadpool.jpg">
+                <img src="../assets/galery/deadpool.jpg">
                 <div>
                     <h4>Deadpool</h4>
                     <p> Un ex mercenario quien, tras haber sido sometido a un cruel experimento adquiere el súper poder de sanar rápidamente, pretende vengarse del hombre que destrozó su vida.</p>
-                    <a href="../pages/deadpool.html">Ver</a>
+                    <a href="../pages/galery/deadpool.html">Ver</a>
                 </div>
               </article>
               <article class="cuatro">
-                <img src="../assets/superpoli.jpg">
+                <img src="../assets/galery/superpoli.jpg">
                   <div>
                       <h4>Superpoli en Las Vegas</h4>
                       <p> Paul Blart lleva a su hija adolescente con él a Las Vegas a una exposición de guardias de seguridad. Mientras están ahí, él se enfrenta a un robo y tiene que detener a los criminales.</p>
-                      <a href="../pages/superpoli.html">Ver</a>
+                      <a href="../pages/galery/superpoli.html">Ver</a>
                   </div>
               </article>
             </section>
             <footer class="genero">
               <P>CINEMAX</P>
-              <img src="../assets/twitter.png" width="45px">
-            <img src="../assets/youtube.png" width="45px">
-            <img src="../assets/instagram.png" width="45px">
-            <img src="../assets/facebook.png" width="45px">
-            <h3>¿Qué es CINEMAX?</h3>
-            <h3>Politica de Privacidad</h3>
-            <h3>Términos de uso</h3>
-            <h3>Ayuda</h3>
+              <img src="../assets/icons/twitter.png" width="45px">
+              <img src="../assets/icons/youtube.png" width="45px">
+              <img src="../assets/icons/instagram.png" width="42px">
+              <img src="../assets/icons/facebook.png" width="45px">
+              <h3>¿Qué es CINEMAX?</h3>
+              <h3>Politica de Privacidad</h3>
+              <h3>Términos de uso</h3>
+              <h3>Ayuda</h3>
             </footer>
       </body>
       <script>
         var index = 1;
-
         function plusIndex(n){
           index = index + n;
           showImage(index);
         }
-
         showImage (1);
-        
         function showImage (n){
           var i;
           var x = document.getElementsByClassName("slides");
@@ -107,7 +104,6 @@
           }
         x[index-1].style.display = "block";
         }
-
         autoSlide();
         function autoSlide(){
           var i;
