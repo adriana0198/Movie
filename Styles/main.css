@@ -155,7 +155,7 @@ h2{
   width: 321px;
   height: 390px;
   transform: scale(0);
-  transition-duration: .5s;
+  transition-duration: .4s;
   overflow: hidden;
 }
 .uno:hover div, .dos:hover div, .tres:hover div, .cuatro:hover div, .cinco:hover div, .seis:hover div, .siete:hover div, .ocho:hover div{
@@ -169,8 +169,8 @@ h2{
   margin-top: 40px;
   font-size: 20px;
   transform: translateY(-210px);
-  transition-duration: 0.6s;
-  transition-delay: .6s;
+  transition-duration: 0.3s;
+  transition-delay: .3s;
   overflow: hidden;
 }
 .uno:hover div h4, .dos:hover div h4, .tres:hover div h4, .cuatro:hover div h4, .cinco:hover div h4, .seis:hover div h4, .siete:hover div h4, .ocho:hover div h4{
@@ -185,8 +185,8 @@ h2{
   font-family: 'Indie Flower', cursive;
   color: aliceblue;
   transform: translateY(270px);
-  transition-duration: .6s;
-  transition-delay: .8s;
+  transition-duration: .3s;
+  transition-delay: .3s;
 }
 .uno:hover div p, .dos:hover div p, .tres:hover div p, .cuatro:hover div p, .cinco:hover div p, .seis:hover div p, .siete:hover div p, .ocho:hover div p{
   transform: translateY(0);
@@ -199,8 +199,8 @@ h2{
   font-size: 18px;
   text-align: center;
   transform: translateY(300px);
-  transition-duration: .6s;
-  transition-delay: .8s;
+  transition-duration: .3s;
+  transition-delay: .3s;
 }
 .uno:hover div a,.dos:hover div a,.tres:hover div a,.cuatro:hover div a,.cinco:hover div a,.seis:hover div a,.siete:hover div a,.ocho:hover div a{
   transform: translateY(0);
@@ -423,7 +423,14 @@ a{
   display: block;
   font-family: 'Rammetto One', cursive;
 }
-
+.cuatro div a{
+  text-decoration: none;
+  color: white;
+  padding: 19px 7px 11px 28px;
+  font-size: 18px;
+  display: block;
+  font-family: 'Rammetto One', cursive;
+}
 header{
   width: 100%;
   height: 110px;
